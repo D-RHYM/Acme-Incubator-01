@@ -34,7 +34,7 @@ public class AnonymousGonzalezBulletinListService implements AbstractListService
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "author", "text", "moment");
+		request.unbind(entity, model, "screenshot", "video", "commentary", "moment");
 	}
 
 	@Override
