@@ -19,14 +19,20 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
-			<acme:menu-suboption code="master.menu.anonymous.david-favourite-link" action="https://www.youtube.com/"/>
-			
-			<acme:menu-separator />
+      
+      <acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 
+      <acme:menu-separator />
+      <acme:menu-suboption code="master.menu.anonymous.david-favourite-link-1" action="https://www.youtube.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.list-bulletin-1" action="/anonymous/caceres-bulletin/list" />
 			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-1" action="/anonymous/caceres-bulletin/create" />
+      
 			
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="http://www.twitter.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.list-bulletin-2" action="/anonymous/gonzalez-bulletin/list" />
+			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-2" action="/anonymous/gonzalez-bulletin/create" />
+
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

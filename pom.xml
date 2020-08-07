@@ -23,7 +23,9 @@
 	<packaging>war</packaging>
 
 	<name>acme-incubator</name>
-	<description>This is the Acme Incubator project for the students of Design &amp; Testing.</description>
+
+	<description>This is the Acme Incubator Project for the students of Design &amp; Testing.</description>
+
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
