@@ -30,6 +30,9 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.david-favourite-link = Enlace favorito de David
+master.menu.anonymous.list-bulletin-1 = Listar buletines de David
+master.menu.anonymous.create-bulletin-1 = Publicar buletin de David
 
 # master.menu.administrator ###################################################
 
