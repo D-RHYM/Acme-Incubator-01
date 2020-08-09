@@ -43,7 +43,7 @@ public class AnonymousGonzalezBulletinCreateService implements AbstractCreateSer
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "author", "text");
+		request.unbind(entity, model, "screenshot", "video", "commentary");
 
 	}
 
@@ -57,8 +57,9 @@ public class AnonymousGonzalezBulletinCreateService implements AbstractCreateSer
 		moment = new Date(System.currentTimeMillis() - 1);
 
 		result = new GonzalezBulletin();
-		result.setAuthor("Alejandro Gonzalez");
-		result.setText("Bulletin de Alejandro");
+		result.setVideo("https://www.examplevideo.com");
+		result.setScreenshot("https://www.examplescreenshot.com");
+		result.setCommentary("I love this video");
 		result.setMoment(moment);
 
 		return result;
