@@ -4,6 +4,7 @@ package acme.features.anonymous.gonzalezBulletin;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.entities.bulletins.GonzalezBulletin;
 import acme.framework.components.Errors;
@@ -12,6 +13,7 @@ import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractCreateService;
 
+@Service
 public class AnonymousGonzalezBulletinCreateService implements AbstractCreateService<Anonymous, GonzalezBulletin> {
 
 	// Internal state -------------------------------------------------------------
@@ -28,26 +30,6 @@ public class AnonymousGonzalezBulletinCreateService implements AbstractCreateSer
 	}
 
 	@Override
-	public void bind(final Request<GonzalezBulletin> request, final GonzalezBulletin entity, final Errors errors) {
-		assert request != null;
-		assert entity != null;
-		assert errors != null;
-
-		request.bind(entity, errors);
-
-	}
-
-	@Override
-	public void unbind(final Request<GonzalezBulletin> request, final GonzalezBulletin entity, final Model model) {
-		assert request != null;
-		assert entity != null;
-		assert model != null;
-
-		request.unbind(entity, model, "screenshot", "video", "commentary");
-
-	}
-
-	@Override
 	public GonzalezBulletin instantiate(final Request<GonzalezBulletin> request) {
 		assert request != null;
 
@@ -57,12 +39,28 @@ public class AnonymousGonzalezBulletinCreateService implements AbstractCreateSer
 		moment = new Date(System.currentTimeMillis() - 1);
 
 		result = new GonzalezBulletin();
-		result.setVideo("https://www.examplevideo.com");
-		result.setScreenshot("https://www.examplescreenshot.com");
-		result.setCommentary("I love this video");
+
 		result.setMoment(moment);
 
 		return result;
+	}
+
+	@Override
+	public void unbind(final Request<GonzalezBulletin> request, final GonzalezBulletin entity, final Model model) {
+		assert request != null;
+		assert entity != null;
+		assert model != null;
+
+		request.unbind(entity, model, "screenshot", "video", "commentary");
+	}
+
+	@Override
+	public void bind(final Request<GonzalezBulletin> request, final GonzalezBulletin entity, final Errors errors) {
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
+
+		request.bind(entity, errors);
 	}
 
 	@Override
@@ -83,7 +81,5 @@ public class AnonymousGonzalezBulletinCreateService implements AbstractCreateSer
 		moment = new Date(System.currentTimeMillis() - 1);
 		entity.setMoment(moment);
 		this.repository.save(entity);
-
 	}
-
 }

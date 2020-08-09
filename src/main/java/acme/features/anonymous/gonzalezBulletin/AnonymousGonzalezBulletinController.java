@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/annonymous/gonzalez-bulletin")
+@RequestMapping("/anonymous/gonzalez-bulletin/")
 public class AnonymousGonzalezBulletinController extends AbstractController<Anonymous, GonzalezBulletin> {
 
 	// Internal state ---------------------------------------------------------
