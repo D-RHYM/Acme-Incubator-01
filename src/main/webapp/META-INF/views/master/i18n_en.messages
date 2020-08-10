@@ -10,7 +10,7 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #FFE97F 
+master.banner.background = #181A1B 
 
 # master.welcome ##############################################################
 
@@ -35,9 +35,9 @@ master.menu.anonymous.create-bulletin-1 = Create David's bulletin
 master.menu.anonymous.david-favourite-link-1 = David's favourite link
 
 
-master.menu.anonymous.favourite-link-2 = Alejandro´s link
-master.menu.anonymous.list-bulletin-2 = Alejandro's bulletin
-master.menu.anonymous.create-bulletin-2 = Publish in Alejandro's bulletin
+master.menu.anonymous.list-bulletin-2 = List Alejandro's bulletin
+master.menu.anonymous.create-bulletin-2 = Create Alejandro's bulletin
+master.menu.anonymous.favourite-link-2 = Alejandro´s favourite link
 
 
 master.menu.anonymous.favourite-link = Favourite link
