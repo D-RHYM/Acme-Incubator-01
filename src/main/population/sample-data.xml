@@ -17,4 +17,35 @@
 
 	<import resource="conversion-service.xml" />
 
-</beans>
+<!-- Caceres bulletin -->
+	<bean id="caceresbulletin01" class="acme.entities.bulletins.CaceresBulletin">
+		<property name="author" value="David Caceres" />
+		<property name="moment" value="2019/09/06 01:00" />
+		<property name="url" value="http://www.example.com" />
+		<property name="age" value="20" />
+	</bean>
+	
+
+	<bean id="caceresbulletin02" class="acme.entities.bulletins.CaceresBulletin">
+		<property name="author" value="David Caceres" />
+		<property name="url" value="https://www.twitter.com/" />
+		<property name="moment" value="2019/09/07 09:00" />
+		<property name="age" value="57" />
+	</bean>
+	
+		<!-- Gonzalez bulletin -->
+
+	<bean id="gonzalezbulletin01" class="acme.entities.bulletins.GonzalezBulletin">
+		<property name="screenshot" value="https://imgur.com/gallery/ubA7F" />
+		<property name="video" value="https://www.youtube.com/watch?v=qI1nswEsCsM" />
+		<property name="commentary" value="Look at this. I think it will help you!" />
+		<property name="moment" value="2019/09/14 15:30" />
+	</bean>
+
+	<bean id="gonzalezbulletin02" class="acme.entities.bulletins.GonzalezBulletin">
+		<property name="screenshot" value="https://imgur.com/gallery/VJHANKr" />
+		<property name="video" value="https://www.youtube.com/watch?v=MpsgEMvSNHw" />
+		<property name="commentary" value="I found that on YouTube and I like it!" />
+		<property name="moment" value="2019/12/24 17:45" />
+	</bean>
+	</beans>

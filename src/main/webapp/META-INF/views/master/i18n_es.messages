@@ -10,13 +10,13 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #FFE97F 
+master.banner.background = #181A1B 
 
 ﻿# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
-	Bienvenidos a Acme Stater!  Nunca antes ha sido tan sencillo desarrollar un \
+	Bienvenidos a Acme Incubator!  Nunca antes ha sido tan sencillo desarrollar un \
 	proyecto y hacerlo funcionar.
 
 # master.menu #################################################################
@@ -29,7 +29,19 @@ master.menu.sign-out = Salir
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
+
+master.menu.anonymous.list-bulletin-1 = Listar buletines de David
+master.menu.anonymous.create-bulletin-1 = Publicar buletin de David
+master.menu.anonymous.david-favourite-link-1 = Enlace favorito de David
+
+
+master.menu.anonymous.list-bulletin-2 = Listar buletines de Alejandro
+master.menu.anonymous.create-bulletin-2 = Publicar buletin de Alejandro
+master.menu.anonymous.favourite-link-2 = Enlace favorito de Alejandro
+
+
 master.menu.anonymous.favourite-link = Enlace favorito
+
 
 # master.menu.administrator ###################################################
 
@@ -72,10 +84,10 @@ master.footer.label.spanish = Español
 
 master.company.title = La compañía
 master.company.text = \
-	Starter Project, Inc. es una compañía fictícia que proporciona un proyecto \
+	Acme-Incubator, Inc. es una compañía fictícia que proporciona un proyecto \
 	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
 	en Ingeniería del Software de la Universidad de Sevilla.
-master.company.name = Starter Project, Inc.
+master.company.name = Acme-Incubator, Inc.
 master.company.address = Calle, número, Ciudad, Estado, País
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com

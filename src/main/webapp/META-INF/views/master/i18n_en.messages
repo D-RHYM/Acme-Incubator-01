@@ -10,13 +10,13 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #FFE97F 
+master.banner.background = #181A1B 
 
 # master.welcome ##############################################################
 
 master.welcome.title = Welcome!
 master.welcome.text = \
-	Welcome to Starter Project! Never before has it bee easier to get your \
+	Welcome to Acme Incubator! Never before has it bee easier to get your \
 	project up and running!
 
 # master.menu #################################################################
@@ -29,7 +29,19 @@ master.menu.sign-out = Sign out
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
+
+master.menu.anonymous.list-bulletin-1 = List David's bulletins
+master.menu.anonymous.create-bulletin-1 = Create David's bulletin
+master.menu.anonymous.david-favourite-link-1 = David's favourite link
+
+
+master.menu.anonymous.list-bulletin-2 = List Alejandro's bulletin
+master.menu.anonymous.create-bulletin-2 = Create Alejandro's bulletin
+master.menu.anonymous.favourite-link-2 = Alejandro´s favourite link
+
+
 master.menu.anonymous.favourite-link = Favourite link
+
 
 # master.menu.administrator ###################################################
 
@@ -72,10 +84,10 @@ master.footer.label.spanish = Spanish
 
 master.company.title = La compañía
 master.company.text = \
-	Starter Project, Inc. is a fictitious fictitious company that provides a \
+	Acme-Incubator, Inc. is a fictitious fictitious company that provides a \
 	starter project for the students of the Design and Testing subject of the \
 	Software Engineering Curriculum of the University of Sevilla.
-master.company.name = Starter Project, Inc.
+master.company.name = Acme-Incubator, Inc.
 master.company.address = Number Street, City, State, Country
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
